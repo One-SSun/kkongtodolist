@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sea wave</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="weather">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="player">
+                <audio id="audioContainer">
+                    <source id="audioSource" src="" />
+                </audio>
+                <div class="player-box">
+                    <i class="playerBtn btnPlay fa-solid fa-play"></i>
+                    <i class="playerBtn btnStop fa-solid fa-pause"></i>
+                    <span>click and listen</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="clock">
+            00 : 00 : 00
+        </div>
+
+        <div class="greeting">
+            <form class="greeting-form hidden">
+                <h2 class="greet-text">Welcome, traveler!</h2>
+                <input type="text" placeholder="write your name and press Enter" class="input-common" required />
+            </form>
+            <h1 class="hidden greet-text"></h1>
+        </div>
+
+        <div class="toDoList">
+            <form class="toDoList-form">
+                <input type="text" placeholder="Write 'to do' and press Enter" class="input-common" />
+            </form>
+            <ul class="toDoList-list">
+            </ul>
+        </div>
+
+        <div class="quote">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/fb41382ee3.js"></script>
+    <script src="script/background.js"></script>
+    <script src="script/clock.js"></script>
+    <script src="script/greeting.js"></script>
+    <script src="script/player.js"></script>
+    <script src="script/todo.js"></script>
+    <script src="script/weather.js"></script>
+    <script src="script/quote.js"></script>
+</body>
+
+</html>
